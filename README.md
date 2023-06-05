@@ -19,7 +19,7 @@ Our application provides you with a convenient way to perform addition operation
 1. Make sure you have Node.js installed on your computer (recommended version 14.x or higher).
 2. Clone the repository or create a new directory and navigate into it:
 
-- https://github.com/alexeyshandrenko/Qiwi-calculation-testing.git
+- git clone https://github.com/alexeyshandrenko/Qiwi-calculation-testing.git
 - cd qiwi
 
 3. Install the dependencies by running the following command:
