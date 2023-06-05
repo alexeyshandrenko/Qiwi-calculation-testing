@@ -1,0 +1,112 @@
+@import "./../../../assets/styles/constants.scss";
+
+.aside {
+  flex: 0.5;
+  background-color: $green-400;
+  padding: 3rem;
+  &__title {
+    color: #fff;
+    text-align: center;
+  }
+  @media (max-width: 790px) {
+    display: none;
+  }
+}
+
+.content {
+  flex: 0.5;
+  padding: 2rem;
+  margin: 1rem;
+  position: relative;
+  @media (max-width: 790px) {
+    flex: 1;
+  }
+  &__step {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__buttons {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.stepsWrapper {
+  padding-bottom: 3rem;
+  width: 90%;
+  max-height: 532px;
+  overflow: auto;
+  @media (max-width: 580px) {
+    max-height: 400px;
+    width: 100%;
+  }
+  &__title {
+    margin-bottom: 2rem;
+  }
+}
+
+.field {
+  &__button {
+    min-width: 50px;
+  }
+  &__input {
+    margin: 0 1rem 1rem 0;
+    width: 60% !important;
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  &__input {
+    width: 40% !important;
+  }
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+  border-top: 5px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-collapse: collapse;
+  outline: 3px solid $green-400;
+  font-size: 15px;
+  background: #fff !important;
+  th {
+    font-weight: bold;
+    padding: 7px;
+    background: $green-400;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid $green-400;
+  }
+  td {
+    padding: 7px;
+    border: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 15px;
+  }
+  tbody tr:nth-child(even) {
+    background: #f8f8f8 !important;
+  }
+  &__button {
+    border-radius: 5px;
+    padding: 5px;
+    background: $grey-600;
+    color: $white;
+  }
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

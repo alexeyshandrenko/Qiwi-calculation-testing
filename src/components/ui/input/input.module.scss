@@ -1,0 +1,9 @@
+@import "./../../../assets/styles/constants.scss";
+
+.input {
+  border: 1px solid $grey-600;
+  border-radius: 25px;
+  padding: 10px 10px;
+  width: 30%;
+  transition: all 0.7s ease-out;
+}

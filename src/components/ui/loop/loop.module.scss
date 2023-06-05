@@ -1,0 +1,20 @@
+@import "./../../../assets/styles/constants.scss";
+
+.loop {
+  max-width: 30rem;
+  stroke: $grey-200;
+  stroke-linecap: round;
+  fill: none;
+  stroke-width: 7%;
+}
+
+.loop use {
+  stroke: $green-400;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}

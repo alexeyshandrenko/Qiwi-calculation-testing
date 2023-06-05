@@ -1,0 +1,25 @@
+@import "./../../../assets/styles/constants.scss";
+
+.button {
+  width: auto;
+  min-width: 150px;
+  padding: 1rem;
+  background-color: $green-400;
+  border-radius: 25px;
+  transition: all 0.7s ease-out;
+  &:hover {
+    background-color: $green-500;
+  }
+  &:disabled,
+  &:focus {
+    background-color: $grey-600;
+  }
+  > span {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    color: $white;
+  }
+}

@@ -1,0 +1,44 @@
+@import "./../../../assets/styles/constants.scss";
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+  border-top: 5px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-collapse: collapse;
+  outline: 3px solid $green-400;
+  font-size: 15px;
+  background: #fff !important;
+  th {
+    font-weight: bold;
+    padding: 7px;
+    background: $green-400;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid $green-400;
+  }
+  &__td {
+    padding: 7px;
+    border: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 1rem;
+    &_green {
+      color: $green-400;
+    }
+  }
+  tbody {
+    tr:nth-child(even) {
+      background: #f8f8f8 !important;
+    }
+  }
+  &__button {
+    border-radius: 5px;
+    padding: 5px;
+    background: $grey-600;
+    color: $white;
+  }
+}

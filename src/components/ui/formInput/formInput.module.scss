@@ -1,0 +1,27 @@
+@import "./../../../assets/styles/constants.scss";
+
+.input {
+  border: 2px solid $grey-600;
+  border-radius: 25px;
+  padding: 15px 10px;
+  width: 100%;
+  min-height: 49px;
+  transition: all 0.7s ease-out;
+  @media (max-width: 790px) {
+    width: 100%;
+  }
+  &:focus {
+    border-color: $green-400;
+  }
+  &_error {
+    border-color: $red-600;
+    &:focus {
+      border-color: $red-600;
+    }
+  }
+}
+
+.error {
+  color: $red-600;
+  padding-top: 5px;
+}
